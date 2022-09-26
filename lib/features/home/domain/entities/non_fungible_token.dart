@@ -1,6 +1,6 @@
 import 'package:equatable/equatable.dart';
 
-class NonFungibleToken extends Equatable {
+class NonFungibleTokenBehavior extends Equatable {
   final String owner;
   final String imageUrl;
   final String name;
@@ -8,7 +8,7 @@ class NonFungibleToken extends Equatable {
   final String chain;
   final String creationDate;
 
-  const NonFungibleToken(
+  const NonFungibleTokenBehavior(
       {required this.owner,
       required this.imageUrl,
       required this.name,

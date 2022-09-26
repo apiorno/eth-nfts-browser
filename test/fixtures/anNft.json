@@ -1,0 +1,21 @@
+{
+    "event": {
+      "id": 64175,
+      "fancy_id": "nec-mergitur-edition-33-2022",
+      "name": "Nec Mergitur Edition #33",
+      "event_url": "",
+      "image_url": "https://assets.poap.xyz/nec-mergitur-edition-33-2022-logo-1662634861554.png",
+      "country": "",
+      "city": "",
+      "description": "For Nec Mergitur's 33rd edition (8th of September 2022).",
+      "year": 2022,
+      "start_date": "08-Sep-2022",
+      "end_date": "08-Sep-2022",
+      "expiry_date": "09-Sep-2022",
+      "supply": 8
+    },
+    "tokenId": "5599933",
+    "owner": "0xd8da6bf26964af9d7eed9e03e53415d37aa96045",
+    "chain": "xdai",
+    "created": "2022-09-08 19:58:45"
+  }

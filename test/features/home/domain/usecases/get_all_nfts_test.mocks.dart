@@ -44,20 +44,22 @@ class MockNftsRepositoryBehavior extends _i1.Mock
   }
 
   @override
-  _i4.Future<_i2.Either<_i5.Failure, List<_i6.NonFungibleToken>>>
+  _i4.Future<_i2.Either<_i5.Failure, List<_i6.NonFungibleTokenBehavior>>>
       getAllNftsOwnedBy(String? ethereumAddress) => (super.noSuchMethod(
             Invocation.method(
               #getAllNftsOwnedBy,
               [ethereumAddress],
             ),
             returnValue: _i4.Future<
-                    _i2.Either<_i5.Failure, List<_i6.NonFungibleToken>>>.value(
-                _FakeEither_0<_i5.Failure, List<_i6.NonFungibleToken>>(
+                    _i2.Either<_i5.Failure,
+                        List<_i6.NonFungibleTokenBehavior>>>.value(
+                _FakeEither_0<_i5.Failure, List<_i6.NonFungibleTokenBehavior>>(
               this,
               Invocation.method(
                 #getAllNftsOwnedBy,
                 [ethereumAddress],
               ),
             )),
-          ) as _i4.Future<_i2.Either<_i5.Failure, List<_i6.NonFungibleToken>>>);
+          ) as _i4.Future<
+              _i2.Either<_i5.Failure, List<_i6.NonFungibleTokenBehavior>>>);
 }
