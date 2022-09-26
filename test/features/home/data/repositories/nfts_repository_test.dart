@@ -17,7 +17,7 @@ import 'nfts_repository_test.mocks.dart';
   NetworkInfoBehavior
 ])
 void main() {
-  late MockNftsRemoteDataSource mockRemoteDataSource;
+  late MockNftsRemoteDataSourceBehavior mockRemoteDataSource;
   late MockNftsLocalDataSourceBehavior mockLocalDataSource;
   late NetworkInfoBehavior mockNetworkInfo;
   late NftsRepository repository;
@@ -44,7 +44,7 @@ void main() {
   ];
 
   setUp(() {
-    mockRemoteDataSource = MockNftsRemoteDataSource();
+    mockRemoteDataSource = MockNftsRemoteDataSourceBehavior();
     mockLocalDataSource = MockNftsLocalDataSourceBehavior();
     mockNetworkInfo = MockNetworkInfoBehavior();
     repository = NftsRepository(
