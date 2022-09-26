@@ -11,8 +11,11 @@ import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
 import 'nfts_repository_test.mocks.dart';
 
-@GenerateMocks(
-    [NftsRemoteDataSource, NftsLocalDataSourceBehavior, NetworkInfoBehavior])
+@GenerateMocks([
+  NftsRemoteDataSourceBehavior,
+  NftsLocalDataSourceBehavior,
+  NetworkInfoBehavior
+])
 void main() {
   late MockNftsRemoteDataSource mockRemoteDataSource;
   late MockNftsLocalDataSourceBehavior mockLocalDataSource;

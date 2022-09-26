@@ -8,7 +8,7 @@ import 'package:dartz/dartz.dart';
 import 'package:eth_nfts_browser/features/home/domain/repositories/nfts_repository.dart';
 
 class NftsRepository implements NftsRepositoryBehavior {
-  final NftsRemoteDataSource remoteDataSource;
+  final NftsRemoteDataSourceBehavior remoteDataSource;
   final NftsLocalDataSourceBehavior localDataSource;
   final NetworkInfoBehavior networkInfo;
 
