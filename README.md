@@ -4,7 +4,7 @@ Simple eth nfts browser using flutter following CLEAN Architecture with BLoC sta
 
 ## Cache / Local storage
 
-Shared Settings choosen by simplicity, may be changed to Sembast in future.
+Shared Preferences choosen by simplicity, may be changed to Sembast in future.
 
 ## Testing
 
