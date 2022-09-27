@@ -20,13 +20,13 @@ Used
 
 ## Pending
 
-● Better UI
-● Adjust message in error handling
-● UI Test/ Integration Tests.
+● Better UI <br>
+● Adjust message in error handling <br>
+● UI Test/ Integration Tests <br>
 
-Bonus
-● The input address format should be validated (length and characters is enough). [DONE]
+### Bonus
+● The input address format should be validated (length and characters is enough). [DONE] <br>
 ● An Ethereum address can be an EOA (i.e. a regular user wallet) or a smart contract. We
-should only allow EOAs (not smart contract addresses) to search for their NFTs. [PENDING]
-● Allow the user to search NFTs with certain text.[PENDING]
+should only allow EOAs (not smart contract addresses) to search for their NFTs. [PENDING] <br>
+● Allow the user to search NFTs with certain text.[PENDING] <br>
 ● Allow the user to filter the POAPs by some useful attribute(s).[PENDING]
