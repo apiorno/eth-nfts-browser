@@ -7,10 +7,4 @@ abstract class NonFungibleTokenEvent extends Equatable {
   List<Object> get props => [];
 }
 
-class GetAllNonFungibleTokensEvent extends NonFungibleTokenEvent {
-  final String ethereumAddress;
-  const GetAllNonFungibleTokensEvent(this.ethereumAddress);
-
-  @override
-  List<Object> get props => [ethereumAddress];
-}
+class GetAllNonFungibleTokensEvent extends NonFungibleTokenEvent {}

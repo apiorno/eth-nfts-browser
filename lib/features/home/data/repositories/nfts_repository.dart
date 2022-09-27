@@ -26,6 +26,7 @@ class NftsRepository implements NftsRepositoryBehavior {
       if (!await networkInfo.isConnected) return Left(ClientFailure());
       final remoteNfts =
           await remoteDataSource.getAllNftsOwnedBy(ethereumAddress);
+      if (remoteNfts.isEmpty) return Left(ClientFailure());
       localDataSource.cacheNftsOwnership(ethereumAddress, remoteNfts);
       return Right(remoteNfts);
     } on ServerException {

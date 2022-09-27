@@ -53,7 +53,10 @@ void main() {
         },
         build: () =>
             NonFungibleTokenBloc(getAllNfts: mockGetAllNonFungibleTokens),
-        act: (bloc) => bloc.add(const GetAllNonFungibleTokensEvent(address)),
+        act: (bloc) {
+          bloc.addressController().text = address;
+          bloc.add(GetAllNonFungibleTokensEvent());
+        },
         verify: (bloc) => verify(
             mockGetAllNonFungibleTokens(const Params(address: address))));
     blocTest(
@@ -65,10 +68,14 @@ void main() {
         },
         build: () =>
             NonFungibleTokenBloc(getAllNfts: mockGetAllNonFungibleTokens),
-        act: (bloc) => bloc.add(const GetAllNonFungibleTokensEvent(address)),
+        act: (bloc) {
+          bloc.addressController().text = address;
+          bloc.add(GetAllNonFungibleTokensEvent());
+        },
         expect: () => <NonFungibleTokenState>[
               LoadingNonFungibleTokenState(),
-              const LoadedNonFungibleTokenState(nfts)
+              const LoadedNonFungibleTokenState(nfts),
+              InitialNonFungibleTokenState()
             ]);
 
     blocTest(
@@ -80,10 +87,14 @@ void main() {
         },
         build: () =>
             NonFungibleTokenBloc(getAllNfts: mockGetAllNonFungibleTokens),
-        act: (bloc) => bloc.add(const GetAllNonFungibleTokensEvent(address)),
+        act: (bloc) {
+          bloc.addressController().text = address;
+          bloc.add(GetAllNonFungibleTokensEvent());
+        },
         expect: () => <NonFungibleTokenState>[
               LoadingNonFungibleTokenState(),
-              const ErrorNonFungibleTokenState(message: serverFailure)
+              const ErrorNonFungibleTokenState(message: serverFailure),
+              InitialNonFungibleTokenState()
             ]);
 
     blocTest(
@@ -95,10 +106,14 @@ void main() {
         },
         build: () =>
             NonFungibleTokenBloc(getAllNfts: mockGetAllNonFungibleTokens),
-        act: (bloc) => bloc.add(const GetAllNonFungibleTokensEvent(address)),
+        act: (bloc) {
+          bloc.addressController().text = address;
+          bloc.add(GetAllNonFungibleTokensEvent());
+        },
         expect: () => <NonFungibleTokenState>[
               LoadingNonFungibleTokenState(),
-              const ErrorNonFungibleTokenState(message: clientFailure)
+              const ErrorNonFungibleTokenState(message: clientFailure),
+              InitialNonFungibleTokenState()
             ]);
   });
 }
