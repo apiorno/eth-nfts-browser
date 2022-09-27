@@ -30,3 +30,11 @@ Used
 should only allow EOAs (not smart contract addresses) to search for their NFTs. [PENDING] <br>
 ● Allow the user to search NFTs with certain text.[PENDING] <br>
 ● Allow the user to filter the POAPs by some useful attribute(s).[PENDING]
+
+## Running app
+
+### Downlaod deps & Generate mocks and stuff
+
+```
+flutter pub get && flutter pub run build_runner build --delete-conflicting-outputs
+```
